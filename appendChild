@@ -1,0 +1,15 @@
+<p>Click the button to create a P element with some text :D.</p>
+<button onclick="myFunction()">TRY IT</button>
+
+HTML ^
+
+function myFunction() {
+	var para = document.createElement("P");
+  var t = document.createTextNode("THIS IS A PARAGRAPH :D");
+  para.appendChild(t);
+  document.body.appendChild(para);
+}
+
+JAVA^
+
+APPEND CHILD :D
