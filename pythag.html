@@ -1,0 +1,23 @@
+<html>
+<head>
+
+<p >A:</p>
+<input type = "number" id = "a">
+<p >B:</p>
+<input type = "number" id = "b">
+<p id="showC">C:</p>
+<button onclick="sideC()">SHOW C</button>
+</head>
+<body>
+<script>
+function sideC() {
+	var a = document.getElementById('a').value;
+	var aSquare = Math.pow(a,2);
+	var b = document.getElementById('b').value;
+	var bSquare = Math.pow(b,2);
+  var c = Math.sqrt(aSquare + bSquare,2);
+  document.getElementById('showC').innerHTML = c;
+}
+</script>
+</body>
+</html>
