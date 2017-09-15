@@ -1,0 +1,31 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <script>
+      function removeOne() {
+        //select the duck in the list item and save it
+        var duck = document.getElementsByTagName('li')[1];
+        //select the containing element, the parentNode is <ul>
+        var ul = duck.parentNode;
+        //remove element
+        ul.removeChild(duck);
+      }
+    </script>
+    
+    <button onclick = "removeOne()">
+      Click Here
+    </button>
+    <ul>
+    <li>Chicken</li>
+    <li>Duck</li>
+    <li>Goose</li>
+    </ul>
+    
+  </body>
+  
+  
+  
+  
+  
+</html>
